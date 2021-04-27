@@ -19,6 +19,10 @@ const Students = [
 
 
 
+app.get('/', (req, res) => {
+    res.send("Ahlan");
+});
+
 app.get('/api/students', (req, res) => {
     res.send(Students);
 });
