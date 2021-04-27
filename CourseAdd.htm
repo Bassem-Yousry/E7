@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <link rel = "stylesheet" href="style.css">
+  <title> AddCourse </title>
+  <body>
+	<header>
+		<h1>Course DB</h1>
+	</header>
+	<form action="/addCourse" method="POST">
+		<fieldset>
+		<h3>Add Course</h3>
+		<label>Code</label>
+		<input type ="text" id = 'codeID' name="code" required>
+		<br><br>
+		<label>Name</label>
+		<input type="text" id = "name" name="name" required>
+		<br><br>
+		<label>description</label>
+		<input type="text" id = "Des" name="desc" >
+		<br><br>
+		<button type ="reset">Reset</button>
+		<button type ="submit">Submit</button>
+		</fieldset>
+	</form>
+	<h4>A new course added</h4>
+  </body>
+</html>

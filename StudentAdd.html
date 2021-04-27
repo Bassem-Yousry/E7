@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <link rel = "stylesheet" href="style.css">
+  <title> AddStudent </title>
+  <body>
+	<header>
+		<h1>Student DB</h1>
+	</header>
+	<form action="/addStudent" method="POST">
+		<fieldset>
+		<h3>Add Student</h3>
+		<label>Code</label>
+		<input type ="text" id = 'codeID' name="code" required>
+		<br><br>
+		<label>Name</label>
+		<input type="text" id = "name" name="name" required>
+		<br><br>
+		
+		<button type ="reset">Reset</button>
+		<button type ="submit">Submit</button>
+		</fieldset>
+	</form>
+	<h4>A new Student added</h4>
+  </body>
+</html>

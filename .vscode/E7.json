@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": 
+[
+
+    {
+        
+            "type": "pwa-node",
+            "request": "e7",
+            "name": "E7",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\E7.js"
+        }
+    ]
+}
