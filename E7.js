@@ -190,7 +190,7 @@ app.get('/web/courses/create', function(req,res){
 app.post('/addCourse', function(req,res){
    const result = validateCourse(req.body)
    if (result.error) {
-    res.status(400).send(result.error.details[0].message);
+    res.status(400).send("error =>"+result.error.details[0].message);
     return;
     }
     const course = {
