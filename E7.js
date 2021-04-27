@@ -216,7 +216,7 @@ function validateCourse(course){
     const schema = Joi.object({ 
         name: Joi.string().min(3).required(),
         code : Joi.string().pattern(new RegExp('^[a-zA-Z]{3}[0-9]{3}$')).required(),
-        desc : Joi.string().max(200)
+        desc : Joi.string().max(200).optional()
     });
  return   schema.validate(course)
 }
