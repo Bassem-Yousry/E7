@@ -220,14 +220,14 @@ function validateCourse(course){
     const schema = Joi.object({ 
         name: Joi.string().min(3).required(),
         code : Joi.string().pattern(new RegExp('^[a-zA-Z]{3}[0-9]{3}$')).required(),
-        desc : Joi.string().max(200).optional()
+        desc : Joi.string().max(200).allow('')
     });
  return   schema.validate(course)
 }
  
 function validateStudent(student){
     const schema = Joi.object({ 
-        name: Joi.string().pattern(new RegExp("^[A-Za-z_']+$")).required(),
+        name: Joi.string().pattern(new RegExp("[A-Za-z_']+")).required(),
         code : Joi.string().length(7).required()
     });
     
